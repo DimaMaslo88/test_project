@@ -1,0 +1,39 @@
+@import '../../common/styles/sass/variables';
+
+
+.headerBlock{
+height: 100vh;
+background-color:$bgColor ;
+  .container{
+
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: start;
+    padding: 20px;
+   // justify-content: space-between;
+    flex-wrap: wrap;
+
+.photo{
+  width: 300px;
+  height: 400px;
+  background-image: url("../../../../portfolioNew/src/images/new.jpg");
+  background-position: 40% 0;
+  border-radius: 8px;
+}
+    .info{
+      height: 100px;
+      width: 800px;
+      margin: 20px;
+    }
+    .button{
+      display: flex;
+
+
+
+
+
+    }
+  }
+}
