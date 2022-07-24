@@ -1,0 +1,31 @@
+.skill{
+  display: flex;
+  justify-content: space-between;
+  .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logo{
+      width: 40px;
+      height: 40px;
+    }
+ }
+  .rating{
+display: flex;
+    .but{
+
+      height: 20px;
+      width: 20px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      &:hover{
+
+        opacity: 0.8;
+
+      }
+    }
+
+  }
+
+}
+

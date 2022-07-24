@@ -4,6 +4,7 @@ import style from "./Technologies.module.scss"
 import {Information} from "./info/Information";
 
 
+
 export const TechnologiesStack = () => {
     return (
         <div className={style.header}>
@@ -14,6 +15,7 @@ export const TechnologiesStack = () => {
                     </div>
                 <div>
                     <Information/>
+
                 </div>
 
                 </div>
