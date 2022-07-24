@@ -24,7 +24,7 @@ export const ModalWindow = () => {
 
 
     const handleModalClose = () => {
-        dispatch(setModalWindowAC(false, 'add'))
+        dispatch(setModalWindowAC(false, null))
     };
 
 

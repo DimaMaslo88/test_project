@@ -2,20 +2,20 @@ import {v1} from "uuid";
 
 const InitialState: InitialStateType = {
     languages: [
-        { name: "JavaScript"},
+        {name: "JavaScript"},
     ],
-    technologies:[
-        {title:"React"}
+    technologies: [
+        {title: "React"}
     ],
 
 }
 
- export type InitialStateType = {
+export type InitialStateType = {
     languages: LanguagesType[]
-     technologies:TechnologiesType[]
+    technologies: TechnologiesType[]
 }
 
- export type LanguagesType = {
+export type LanguagesType = {
     // id: string
     name: string
 }
@@ -25,7 +25,7 @@ export type TechnologiesType = {
 }
 
 export type GeneralActionType = ReturnType<typeof addLanguagesAC>
-|ReturnType<typeof addTechnologiesAC>
+    | ReturnType<typeof addTechnologiesAC>
 
 export const LanguagesReducer = (state: InitialStateType = InitialState, action: GeneralActionType): InitialStateType => {
     switch (action.type) {
@@ -35,14 +35,14 @@ export const LanguagesReducer = (state: InitialStateType = InitialState, action:
                 // id:v1(),
                 name: action.name
             }
-            return {...state,languages:[newLang,...state.languages]}
+            return {...state, languages: [newLang, ...state.languages]}
         }
-        case "ADD-NEW-TECHNOLOGIES":{
+        case "ADD-NEW-TECHNOLOGIES": {
             const newTech = {
                 // id:v1(),
                 title: action.title
             }
-            return {...state,technologies:[newTech,...state.technologies]}
+            return {...state, technologies: [newTech, ...state.technologies]}
         }
         default:
             return state
@@ -50,17 +50,17 @@ export const LanguagesReducer = (state: InitialStateType = InitialState, action:
 }
 
 
-export const addLanguagesAC = (name:string) => {
+export const addLanguagesAC = (name: string) => {
     return {
         type: "ADD-NEW-LANGUAGE",
-       name,
+        name,
 
     } as const
 }
-export const addTechnologiesAC = (title:string) => {
+export const addTechnologiesAC = (title: string) => {
     return {
         type: "ADD-NEW-TECHNOLOGIES",
-      title,
+        title,
 
     } as const
 }
