@@ -4,6 +4,7 @@ import HoverRating from "../../../../../common/rating/HoverRating";
 import {RatingInfo} from "../../../../../common/rating/ratingInfo/RatingInfo";
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import {CodingChallenge} from "../../codingChallenge/CodingChallenge";
+import ExpandLess from "@material-ui/icons/ExpandLess";
 
 type SkillPropsType = {
 
@@ -24,7 +25,8 @@ export const Skill = ({title}: SkillPropsType) => {
             <div>
                 <div className={style.rating}>
                     <HoverRating/>
-                    <ExpandMore className={style.but} onClick={onChangeHandler}/>
+                    {!open && <ExpandMore className={style.but} onClick={onChangeHandler}/>}
+                    {open && <ExpandLess className={style.but} onClick={onChangeHandler}/>}
                 </div>
                 <div >
                     {open &&

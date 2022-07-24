@@ -2,7 +2,7 @@
 
 
 .headerBlock{
-height: 100vh;
+height: 100%;
 background-color:$bgColor ;
   .container{
 
@@ -23,7 +23,7 @@ background-color:$bgColor ;
   border-radius: 8px;
 }
     .info{
-      height: 100px;
+      height: 100%;
       width: 800px;
       margin: 20px;
     }
