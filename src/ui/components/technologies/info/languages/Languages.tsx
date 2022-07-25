@@ -20,7 +20,7 @@ export const Languages = ({name}: LanguagesPropsType) => {
           <AddButtonLanguage title={'Add Language'}/>
 
             {languages.map((m) => {
-                return <div >
+                return <div key={m.id} >
 
 
                     <h4>{m.name}</h4>

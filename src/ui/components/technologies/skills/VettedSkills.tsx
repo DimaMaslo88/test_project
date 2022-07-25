@@ -8,12 +8,12 @@ export const VettedSkills = () => {
         <div className={style.header}>
             <div className={style.container}>
                 <div className={style.skills}>
-            <h2><Title title={"Vetted Skills"}/></h2>
+                    <h2><Title title={"Vetted Skills"}/></h2>
                     <div>
                         <SkillPage/>
                     </div>
 
-            </div>
+                </div>
             </div>
         </div>
     );

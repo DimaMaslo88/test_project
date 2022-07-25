@@ -11,8 +11,8 @@ type SkillPropsType = {
     title: string
 }
 export const Skill = ({title}: SkillPropsType) => {
-    const [open,setOpen]=useState<boolean>(false)
-    const onChangeHandler=()=>{
+    const [open, setOpen] = useState<boolean>(false)
+    const onChangeHandler = () => {
         setOpen(!open)
     }
     return (
@@ -28,11 +28,11 @@ export const Skill = ({title}: SkillPropsType) => {
                     {!open && <ExpandMore className={style.but} onClick={onChangeHandler}/>}
                     {open && <ExpandLess className={style.but} onClick={onChangeHandler}/>}
                 </div>
-                <div >
+                <div>
                     {open &&
-                    <RatingInfo/> }
+                    <RatingInfo/>}
                     {open &&
-                        <CodingChallenge/>
+                    <CodingChallenge/>
                     }
 
                 </div>

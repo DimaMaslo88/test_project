@@ -1,12 +1,7 @@
 import React from 'react';
-import {AppStateType, useAppDispatch} from "../../../../../bll/state/store";
+import {AppStateType} from "../../../../../bll/state/store";
 import {useSelector} from "react-redux";
-import {
-
-    TechnologiesType
-} from "../../../../../bll/state/reducers/languages-reducer";
-
-
+import {TechnologiesType} from "../../../../../bll/state/reducers/languages-reducer";
 import {ModalWindow} from "../../../../../utils/Modal";
 import AddButtonTechnologies from "../../../../../common/button/AddButtonTechnologies";
 
@@ -23,10 +18,10 @@ export const Technologies = ({name}: TechnologiesPropsType) => {
             <AddButtonTechnologies title={'Add Technologies'}/>
 
             {technologies.map((tech) => {
-                return <div>
+                return <div key={tech.id}>
 
 
-                    <h4 >{tech.title}</h4>
+                    <h4>{tech.title}</h4>
 
                 </div>
             })}

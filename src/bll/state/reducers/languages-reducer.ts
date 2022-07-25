@@ -2,10 +2,10 @@ import {v1} from "uuid";
 
 const InitialState: InitialStateType = {
     languages: [
-        {name: "JavaScript"},
+        {id: v1(), name: "JavaScript"},
     ],
     technologies: [
-        {title: "React"}
+        {id: v1(), title: "React"}
     ],
 
 }
@@ -16,11 +16,11 @@ export type InitialStateType = {
 }
 
 export type LanguagesType = {
-    // id: string
+    id: string
     name: string
 }
 export type TechnologiesType = {
-    // id: string
+    id: string
     title: string
 }
 
@@ -32,14 +32,14 @@ export const LanguagesReducer = (state: InitialStateType = InitialState, action:
         case "ADD-NEW-LANGUAGE": {
             debugger
             const newLang = {
-                // id:v1(),
+                id: v1(),
                 name: action.name
             }
             return {...state, languages: [newLang, ...state.languages]}
         }
         case "ADD-NEW-TECHNOLOGIES": {
             const newTech = {
-                // id:v1(),
+                id: v1(),
                 title: action.title
             }
             return {...state, technologies: [newTech, ...state.technologies]}

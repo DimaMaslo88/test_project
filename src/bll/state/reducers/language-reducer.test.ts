@@ -1,14 +1,15 @@
-import {addLanguagesAC, InitialStateType, LanguagesReducer, LanguagesType} from "./languages-reducer";
+import {addLanguagesAC, InitialStateType, LanguagesReducer} from "./languages-reducer";
+import {v1} from "uuid";
 
 
 let startState: InitialStateType;
 beforeEach(() => {
     startState = {
         languages: [
-            {name: 'Java Script'},
+            {id:v1(),name: 'Java Script'},
         ],
         technologies:[
-            {title:"React"}
+            {id:v1(),title:"React"}
         ]
     }
 })
