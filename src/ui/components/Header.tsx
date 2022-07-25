@@ -19,31 +19,33 @@ export const Header = () => {
                 <div className={style.info}>
                     <h1>{'Dmitry Maslo'}</h1>
                     <h2><Title title={'Junior Frontend Developer'}/></h2>
-                    <div>
+<div className={style.titleBlock}>
+                    <div className={style.title}>
                         <NextWeek/><Title title={'Half year - total work experience'}/>
                     </div>
-                    <div>
+                    <div className={style.title}>
                         <QueryBuilder/>
                         <Title title={'Overlap with your time zone: XX am - XX pm'}/>
 
                     </div>
-                    <div>
+                    <div className={style.title}>
                         <CheckCircleOutline/>
                         <Title title={'Availability: ready to start now'}/>
 
                     </div>
-                    <div>
+                    <div className={style.title}>
                         < FileCopy/>
                         <Title title={'Full time - 40 hours in week'}/>
 
                     </div>
 
-                    <div><Title title={`I’m Dmitry Maslo, Frontend Developer with half a year experience. I have experience in creating SPA with React/Redux/TypeScript.
+                    <div className={style.title}><Title title={`I’m Dmitry Maslo, Frontend Developer with half a year experience. I have experience in creating SPA with React/Redux/TypeScript.
                         Now I am improving my skills in this direction and expanding them with new technologies.I plan to study React Native.
                         Open for your suggestions.`}/>
                     </div>
-
+</div>
                 </div>
+
                 <div className={style.button}>
                     <CommonButtonWhite title={'Share'}/>
                     <CommonButton title={'Book a call'}/>

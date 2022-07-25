@@ -5,6 +5,7 @@ import {RatingInfo} from "../../../../../common/rating/ratingInfo/RatingInfo";
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import {CodingChallenge} from "../../codingChallenge/CodingChallenge";
 import ExpandLess from "@material-ui/icons/ExpandLess";
+import CheckCircleOutline from "@material-ui/icons/CheckCircleOutline";
 
 type SkillPropsType = {
 
@@ -17,7 +18,10 @@ export const Skill = ({title}: SkillPropsType) => {
     }
     return (
         <div className={style.skill}>
+
             <div className={style.main}>
+
+
                 <img src={'https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png'} className={style.logo}/>
                 {title}
             </div>

@@ -1,38 +1,50 @@
 @import '../../common/styles/sass/variables';
 
 
-.headerBlock{
-height: 100%;
-background-color:$bgColor ;
-  .container{
+.headerBlock {
+  height: 100%;
+  background-color: $bgColor;
+
+  .container {
 
     height: 100%;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: start;
     padding: 20px;
-   // justify-content: space-between;
+    // justify-content: space-between;
     flex-wrap: wrap;
 
-.photo{
-  width: 300px;
-  height: 400px;
-  background-image: url("../../../../portfolioNew/src/images/new.jpg");
-  background-position: 40% 0;
-  border-radius: 8px;
-}
-    .info{
+    .photo {
+      width: 300px;
+      height: 400px;
+      background-image: url("../../../../portfolioNew/src/images/new.jpg");
+      background-position: 40% 0;
+      border-radius: 20px;
+    }
+
+    .info {
       height: 100%;
       width: 800px;
       margin: 20px;
+
+      .titleBlock {
+        display: flex;
+        height: 220px;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title {
+          display: flex;
+
+        }
+      }
+
     }
-    .button{
+
+    .button {
       display: flex;
-
-
-
-
 
     }
   }
